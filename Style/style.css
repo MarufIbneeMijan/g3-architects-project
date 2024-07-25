@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+/* Shared styles */
+.display-flex{
+    display: flex;
+}
+.bg-dark-1{
+    color: #131313;
+}
+.bg-header{
+    background-color:  rgba(255, 144, 14, 0.1);
+}
+.btn-primary{
+    background-color: #FF900E;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 20px 24px;
+    font-family: "Work Sans", sans-serif;
+}
+
+/* main styles */
+header{
+    margin-bottom: 130px;
+}
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+    
+    
+     
+
+}
+.brand{
+    font-weight: 500;
+    font-size: 2.8rem;
+    color: rgb(19, 19, 19);;
+}
+.nav-itmes{
+   gap: 20px;
+
+}
+.nav-item{
+    list-style-type: none;
+}
+.nav-links{
+    text-decoration: none;
+   color:rgb(66, 66, 66);
+}
+.navbar,.banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* banner style */
+.banner-content{
+    max-width: 860px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner-title{
+    font-family: "Work Sans", sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+    color: #131313;
+}
+
+.banner-para{
+    color:#727272 ;
+    font-family: "Work Sans", sans-serif;
+}
+.banner-img{
+    width: 100%;
+}
+/* Main-section-styles */
+.main{
+    max-width: 1440px;
+    margin: 0 auto;
+    gap: 4.2rem;
+    align-items: center;
+
+}
+.main-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.1rem;
+    
+}
+.main-img-container img{
+    border-radius: 8px;
+}
+.main-cont-head{
+    text-transform: capitalize;
+}
+.main-content{
+    max-width: 33.56rem;
+}
+#Quick-list{
+    color: #727272;
+    font-size: 2.8rem;
+    font-family: "Work Sans, sans-serif";
+    font-weight: lighter;
+}
+#of-our{
+    color: #131313 ;
+    font-size: 2.8rem;
+    font-family: "Work Sans, sans-serif";
+    font-weight: bolder;
+}
+#Features{
+    color: #FF900E;
+    font-size: 2.8rem;
+    font-family: "Work Sans, sans-serif";
+    font-weight: bolder;
+}
+
+@media screen and (max-width:576px) {
+    .nav-itmes,.navbar,.main{
+        flex-direction: column;
+    }
+    .main-img-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and (min-width:576px) and (max-width:992px) {
+    .main{
+        flex-direction: column;
+    }
+}
